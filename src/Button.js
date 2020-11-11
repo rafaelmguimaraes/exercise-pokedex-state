@@ -10,11 +10,10 @@ class Button extends React.Component {
   renderChildren() {
     return React.Children.map(this.props.children, child => {
       return React.cloneElement(child, {
-        onClick: (() => this.props.filterFunction(child.type))
+        onClick: (() => this.props.filterFunction(child.key))
       })
     })
   }
-
 
   render() {
     return ( 
