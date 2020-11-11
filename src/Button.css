@@ -1,0 +1,7 @@
+.filterButton button {
+  background-color: aquamarine;
+}
+
+.selectedButton {
+  border: 3px solid red;
+}
